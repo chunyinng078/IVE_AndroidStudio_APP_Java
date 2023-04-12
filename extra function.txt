@@ -1,0 +1,17 @@
+1. there are sound effect: 
+	when click start on the MainActivity(in menu), 
+
+	when answered a correct answer in Game activity(in game), 
+	when answered a wrong answer in Game activity(in game), 
+	when click "Quit" in Game activity(in game)
+
+It add more fun in game.	
+
+2.there are data order function:
+	on GameLog activity, click "Order by" button
+	on QuestionLog activity, click "Order by" button
+
+It helps player to see the newest or oldest log
+
+3.There is a delete game data function on MainActivity(in menu):
+It will remove all data in the game log and question log (database). So player can restart their record.

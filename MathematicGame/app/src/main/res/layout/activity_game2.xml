@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Game"
+    android:orientation="vertical"
+    android:background="@drawable/blackbroad2"
+    >
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="554dp"
+        android:layout_weight="1"
+        android:background="#9000"
+        android:orientation="vertical"
+
+
+        >
+
+
+
+
+        <TextView
+            android:id="@+id/tv"
+            android:layout_width="match_parent"
+
+            android:layout_height="149dp"
+            android:gravity="center"
+            android:textColor="#0fffff"
+            android:textSize="40dp"
+
+            />
+
+
+        <EditText
+            android:id="@+id/et"
+            android:layout_width="match_parent"
+            android:layout_height="67dp"
+            android:background="@color/white"
+            android:hint="Enter Answer here"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="30dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="21dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnSubmit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round"
+                android:onClick="btnSubmit"
+                android:text="Submit"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+
+                />
+
+            <Button
+                android:id="@+id/btnClear"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/round"
+                android:onClick="btnClear"
+                android:text="Clear"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+
+                />
+
+        </LinearLayout>
+
+
+        <Button
+            android:id="@+id/btnPeek"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round"
+            android:onClick="btnPeek"
+            android:text="Peek Answer"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:background="#9000"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        >
+
+        <TextView
+
+            android:id="@+id/tvCheck"
+            android:layout_width="match_parent"
+
+            android:layout_height="157dp"
+            android:gravity="center"
+            android:textColor="#00ffff"
+            android:textSize="30dp"
+
+            android:layout_weight="1"
+            />
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round"
+            android:onClick="btnContinue"
+            android:text="Continue"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+        <Button
+            android:id="@+id/btnQuit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/round"
+            android:onClick="btnQuit"
+            android:text="Quit"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+
+</LinearLayout>

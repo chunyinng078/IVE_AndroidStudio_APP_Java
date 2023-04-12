@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GamesLog"
+    android:orientation="vertical"
+    android:background="@drawable/gamelogbg"
+    >
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="0"
+        android:text="Game Log (from all game) :"
+        android:textSize="30dp"
+        android:textAlignment="center"
+        android:background="#9000"
+        android:textColor="#00ffff"
+
+
+        >
+
+    </TextView>
+
+    <ListView
+        android:id="@+id/lv"
+        android:layout_width="wrap_content"
+        android:layout_height="582dp"
+        android:layout_weight="1"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <Button
+            android:id="@+id/btnFilter"
+            android:layout_width="match_parent"
+            android:layout_height="76dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/round"
+            android:onClick="btnFilter"
+            android:text="Order by Game ID in ASC/DESC"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            ></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="5dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/btnBack"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/round"
+                android:onClick="btnBack"
+                android:text="Back"
+                android:textSize="25dp"
+                android:textStyle="bold"
+
+                ></Button>
+
+            <Button
+                android:id="@+id/btnChart"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/round"
+                android:onClick="btnChart"
+                android:text="Pie Chart"
+                android:textSize="25dp"
+                android:textStyle="bold"></Button>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>
